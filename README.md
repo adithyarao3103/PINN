@@ -26,6 +26,7 @@ where $D_{x_i}$ is the partial derivative of $u$ with respect to $x_i$, we consi
 $$
     \mathbb{E}\left(~f(D_{x_1},~ \dots,~D_{x_n}) [u_\theta(x_1, \dots, x_n)] - g(x_1, \dots, x_n)~\right) + \mathrm{Boundary~Conditions}
 $$
+
 where the $\mathbb{E}$ denotes the expectation value and is taken over a set of training points in the domain of the function $u$.
 
 ## Tensorflow implementation 
