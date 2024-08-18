@@ -2,7 +2,6 @@
 
 This repository contains Jupyter notebooks for the TensorFlow implementation of PINNs for solving PDEs and performing integrations (in a given domain, outside the domain the neural network fails to encapsulate the PDE).
 
-<!-- The 2D case, where I am trying to solve the wave equation is, for some reason, getting glitchy. While for the presented case, the solution is right, for other cases the solution does not quite match the expected solution. I need to look into the implementation to find out what is wrong with the implementation! -->
 ---
 
 ## PINNs
