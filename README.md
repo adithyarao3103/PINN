@@ -1,6 +1,8 @@
 # Physics Informed Neural Networks (PINNs)
 
-This repository contains Jupyter notebooks for the TensorFlow implementation of PINNs for solving PDEs and performing integrations (in a given domain, outside the domain the neural network fails to encapsulate the PDE).
+This repository contains Jupyter notebooks for the TensorFlow implementation of PINNs for solving Differential Equations (in a given domain, outside the domain the neural network fails to encapsulate the PDE).
+
+(There is another application, which is to find the parameters of a DE by fitting a PINN to the “data”, which is the solution of the DE. This is not considered here. Rather we have, so far, only considered PINNs to find the solution for a given DE)
 
 ---
 
@@ -26,6 +28,8 @@ $$
 
 where the $\mathbb{E}$ denotes the expectation value and is taken over a set of training points in the domain of the function $u$.
 
+---
+
 ## Tensorflow implementation 
 
 The implementation is based on the [TensorFlow](https://www.tensorflow.org/) library. The code is written in Python 3.11.0
@@ -33,3 +37,6 @@ The implementation is based on the [TensorFlow](https://www.tensorflow.org/) lib
 In the code, we define the neural network class and use the `tf.GradientTape()` to compute the derivatives of the neural network with respect to the input variables. We then use the computed derivatives to obtain the residual of the PDE, and then the loss. 
 
 Further, we use the Adam optimizer to minimize the loss. We see that even with small networks and a small number of training batches and epochs, we can obtain a very good approximation to the solution of the PDE.
+
+---
+> For more details, refer the readmes in the respective folders.
