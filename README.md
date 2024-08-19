@@ -8,7 +8,7 @@ This repository contains Jupyter notebooks for the TensorFlow implementation of 
 
 ## PINNs
 
-The primary idea behind PINNs is to use a neural network to approximate the solution of a PDE. This is based on the [Kolmogoroov-Arnold representation theorem](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold_representation_theorem), which states that any continuous multivariate function can be represented as a finite composition of continuous functions of single variables, and the binary operation of addition. That is, given a function $f(x_1, x_2, ..., x_n)$, we can write
+The primary idea behind PINNs is to use a neural network to approximate the solution of a PDE. This is based on the [Kolmogorov-Arnold representation theorem](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Arnold_representation_theorem), which states that any continuous multivariate function can be represented as a finite composition of continuous functions of single variables, and the binary operation of addition. That is, given a function $f(x_1, x_2, ..., x_n)$, we can write
 
 $$
 f(x_1, x_2, ..., x_n) = \sum_{i=1}^{2n+1} \Phi_q\left( \sum_{p=1}^{n} \phi_{q,p}(x_p)\right)
