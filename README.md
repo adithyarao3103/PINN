@@ -13,6 +13,7 @@ The primary idea behind PINNs is to use a neural network to approximate the solu
 $$
 f(x_1, x_2, ..., x_n) = \sum_{i=1}^{2n+1} \Phi_q\left( \sum_{p=1}^{n} \phi_{q,p}(x_p)\right)
 $$
+
 where $\phi_{q,p} : [0,1] \to \mathbb{R}$ and $\Phi_q : \mathbb{R} \to \mathbb{R}$
 
 We use the above theorem to represent the solution of a PDE as a neural network, and then train the neural network to minimize the residual of the PDE, i.e., the difference between the left-hand side and the right-hand side of the PDE. Therefore, given a PDE of the form 
