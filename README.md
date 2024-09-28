@@ -32,13 +32,13 @@ where the $\mathbb{E}$ denotes the expectation value and is taken over a set of 
 
 ---
 
-## Tensorflow implementation 
 
-The implementation is based on the [TensorFlow](https://www.tensorflow.org/) library. The code is written in Python 3.11.0
 
-In the code, we define the neural network class and use the `tf.GradientTape()` to compute the derivatives of the neural network with respect to the input variables. We then use the computed derivatives to obtain the residual of the PDE, and then the loss. 
+## Implementation 
 
-Further, we use the Adam optimizer to minimize the loss. We see that even with small networks and a small number of training batches and epochs, we can obtain a very good approximation to the solution of the PDE.
+We implement the PINNs using both the [TensorFlow](Tensorflow) and [PyTorch](PyTorch) libraries.
+
+The project was initially implemented in TensorFlow, but later a PyTorch implementation of the same was also implemented.
 
 ---
 > For more details, refer the readmes in the respective folders.
