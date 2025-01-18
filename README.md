@@ -6,7 +6,7 @@ This repository contains Jupyter notebooks for the TensorFlow implementation of 
 
 ---
 >[!Important]
-> For more details, refer the readmes in the respective folders.
+> Each folder above has its own readme with further details.
 ---
 
 ## PINNs
