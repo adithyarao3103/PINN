@@ -5,6 +5,9 @@ This repository contains Jupyter notebooks for the TensorFlow implementation of 
 (There is another application, which is to find the parameters of a DE by fitting a PINN to the “data”, which is the solution of the DE. This is not considered here. Rather we have, so far, only considered PINNs to find the solution for a given DE)
 
 ---
+>[!Important]
+> For more details, refer the readmes in the respective folders.
+---
 
 ## PINNs
 
@@ -22,7 +25,7 @@ $$
 f(D_{x_1},~ \dots,~D_{x_n})[u(x_1, \dots, x_n)] = g(x_1, \dots, x_n)
 $$
 
-where $D_{x_i}$ is the partial derivative of $u$ with respect to $x_i$, we consider a neural network $u_\theta (x_1, ~\dots,~x_n)$ with parameters $\theta$ and train the neural network to minimize the loss 
+where $D_{x_i}$ is the partial derivative of $u$ with respect to $x_i$, we consider a neural network $u_\theta (x_1, ~\dots,~x_n)$ with parameters $\theta$ and train the neural network to minimize the loss
 
 $$
     \mathbb{E}\left(~f(D_{x_1},~ \dots,~D_{x_n}) [u_\theta(x_1, \dots, x_n)] - g(x_1, \dots, x_n)~\right) + \mathrm{Boundary~Conditions}
@@ -32,13 +35,8 @@ where the $\mathbb{E}$ denotes the expectation value and is taken over a set of 
 
 ---
 
-
-
-## Implementation 
+## Implementation
 
 We implement the PINNs using both the [TensorFlow](Tensorflow) and [PyTorch](PyTorch) libraries.
 
 The project was initially implemented in TensorFlow, but later a PyTorch implementation of the same was also implemented.
-
----
-> For more details, refer the readmes in the respective folders.
